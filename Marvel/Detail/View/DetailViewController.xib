@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MarvelRegular.ttf">
+            <string>Marvel-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="Marvel" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="5yO-tE-Oku" id="OEk-1n-qJu"/>
+                <outlet property="characterImageView" destination="z35-2h-Jho" id="vIJ-Xx-mCd"/>
+                <outlet property="descriptionLabel" destination="RMD-TM-zAv" id="2Rl-qZ-Q4X"/>
+                <outlet property="nameLabel" destination="LN8-fg-ZSG" id="jmk-xr-0To"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z35-2h-Jho" userLabel="Character Image View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="F4b-Cp-od0"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMD-TM-zAv" userLabel="Description Label">
+                    <rect key="frame" x="20" y="406" width="374" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="CHARACTER NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LN8-fg-ZSG" userLabel="Name Label">
+                    <rect key="frame" x="20" y="364" width="374" height="32"/>
+                    <fontDescription key="fontDescription" name="Marvel-Regular" family="Marvel" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="5yO-tE-Oku">
+                    <rect key="frame" x="197" y="184" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="JJR-MM-NSs"/>
+                        <constraint firstAttribute="width" constant="20" id="rFG-BI-5pG"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="5yO-tE-Oku" firstAttribute="centerX" secondItem="z35-2h-Jho" secondAttribute="centerX" id="25B-YN-wIk"/>
+                <constraint firstItem="z35-2h-Jho" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="80W-6w-r1H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RMD-TM-zAv" secondAttribute="bottom" constant="20" id="IiR-NM-8M1"/>
+                <constraint firstItem="LN8-fg-ZSG" firstAttribute="top" secondItem="z35-2h-Jho" secondAttribute="bottom" constant="20" id="OB9-9r-258"/>
+                <constraint firstItem="5yO-tE-Oku" firstAttribute="centerY" secondItem="z35-2h-Jho" secondAttribute="centerY" id="UFT-s0-Gak"/>
+                <constraint firstItem="z35-2h-Jho" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YPz-l9-YG0"/>
+                <constraint firstItem="RMD-TM-zAv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dtF-Xa-4Am"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LN8-fg-ZSG" secondAttribute="trailing" constant="20" id="l8k-me-GSG"/>
+                <constraint firstItem="z35-2h-Jho" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="noL-8m-isB"/>
+                <constraint firstItem="LN8-fg-ZSG" firstAttribute="centerX" secondItem="z35-2h-Jho" secondAttribute="centerX" id="pYp-OT-XXJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RMD-TM-zAv" secondAttribute="trailing" constant="20" id="sWs-KA-Zd4"/>
+                <constraint firstItem="RMD-TM-zAv" firstAttribute="top" secondItem="LN8-fg-ZSG" secondAttribute="bottom" constant="10" id="yAM-pq-wgl"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="91"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

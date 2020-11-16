@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MarvelRegular.ttf">
+            <string>Marvel-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Marvel" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="IJO-P4-lmg" id="sYq-me-x9j"/>
+                <outlet property="charactersTableView" destination="81c-HD-bbY" id="N8k-gY-BUl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARVEL CHARACTERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EO-Aj-cAw" userLabel="Title Label">
+                    <rect key="frame" x="10" y="64" width="394" height="30"/>
+                    <fontDescription key="fontDescription" name="Marvel-Regular" family="Marvel" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="81c-HD-bbY" userLabel="Characters Table View">
+                    <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="vL4-fN-9Ad"/>
+                        <outlet property="delegate" destination="-1" id="bCz-PC-9l4"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="IJO-P4-lmg">
+                    <rect key="frame" x="197" y="478" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Pnd-DF-A6L"/>
+                        <constraint firstAttribute="height" constant="20" id="gKx-6X-Hz8"/>
+                    </constraints>
+                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="81c-HD-bbY" firstAttribute="top" secondItem="5EO-Aj-cAw" secondAttribute="bottom" constant="20" id="12h-Ta-ac7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="81c-HD-bbY" secondAttribute="trailing" id="EnR-i4-qmC"/>
+                <constraint firstItem="5EO-Aj-cAw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="O00-iE-9mb"/>
+                <constraint firstItem="IJO-P4-lmg" firstAttribute="centerX" secondItem="81c-HD-bbY" secondAttribute="centerX" id="TJM-Jz-akI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5EO-Aj-cAw" secondAttribute="trailing" constant="10" id="Xxk-E2-qn1"/>
+                <constraint firstItem="81c-HD-bbY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ag1-Fp-0QQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="81c-HD-bbY" secondAttribute="bottom" id="bC5-9d-k0m"/>
+                <constraint firstItem="5EO-Aj-cAw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="ozz-nN-dh0"/>
+                <constraint firstItem="IJO-P4-lmg" firstAttribute="centerY" secondItem="81c-HD-bbY" secondAttribute="centerY" id="uKx-Ai-aOO"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="141"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
