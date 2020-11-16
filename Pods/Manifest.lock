@@ -1,5 +1,4 @@
 PODS:
-  - ImageLoader (0.15.0)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -8,23 +7,20 @@ PODS:
   - RxSwift (5.1.1)
 
 DEPENDENCIES:
-  - ImageLoader
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
 
 SPEC REPOS:
   trunk:
-    - ImageLoader
     - RxCocoa
     - RxRelay
     - RxSwift
 
 SPEC CHECKSUMS:
-  ImageLoader: e0635d52020d64dc7687e3a3b14dc53212ac0442
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: 75c8efb198ad9c65200f9085dcfea88962ee3a60
+PODFILE CHECKSUM: b66038f1c5d03e0e44e848a5585cacbe3d0a5323
 
 COCOAPODS: 1.9.3
